@@ -1,0 +1,13 @@
+# Normalize line endings: Git stores LF, checks out native on each OS.
+* text=auto
+
+# Shell scripts must stay LF (they break with CRLF on Linux).
+*.sh text eol=lf
+
+# Common binaries (safety net; none tracked yet, but future-proof).
+*.pth binary
+*.pt  binary
+*.npy binary
+*.png binary
+*.jpg binary
+*.pdf binary

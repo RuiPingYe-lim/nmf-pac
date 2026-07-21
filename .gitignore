@@ -1,0 +1,25 @@
+# ---- data & large artifacts (never commit) ----
+data/
+outputs/
+checkpoints*/
+runs/
+*.pth
+*.pt
+*.ckpt
+*.npy
+*.npz
+
+# ---- python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# ---- os / editor ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
