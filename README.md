@@ -189,9 +189,10 @@ If you use this code, please cite the paper (under review):
 ```bibtex
 @article{nmfpac,
   title   = {NMF-PAC: Non-negative Matrix Factorization-based Prototype Pseudo-labeling
-             with Adaptive Thresholding and Contrastive Consistency for Unsupervised
-             Domain Adaptation in Medical Image Classification},
-  author  = {Ye, Ruiping and Liu, Weiqiang and Zheng, Yifeng and Chen, Wenlong},
+             with Adaptive Thresholding and Contrastive Consistency for Medical Image
+             Domain Adaptation},
+  author  = {Ye, Ruiping and Liu, Weiqiang and Zheng, Yifeng and Chen, Wenlong
+             and Ji, Huayi and Xu, Lei},
   year    = {2026}
 }
 ```
