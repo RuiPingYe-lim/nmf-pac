@@ -1,7 +1,7 @@
 # NMF-PAC
 
 **Non-negative Matrix Factorization-based Prototype pseudo-labeling with Adaptive
-Thresholding and Contrastive consistency** for unsupervised domain adaptation (UDA)
+Thresholding and Contrastive Consistency** for unsupervised domain adaptation (UDA)
 in medical image classification.
 
 NMF-PAC builds class prototypes from labeled source features via rank-1 NMF, assigns
@@ -12,7 +12,7 @@ decision boundary with a **symmetric cross-domain InfoNCE** loss. Training alter
 between a pseudo-label mining stage (network frozen) and a model optimization stage.
 
 > This repository contains the reference implementation of **NMF-PAC** and the
-> **knee-MRI** cross-dataset task (MRNet-v1.0 ↔ KneeMRI) as a runnable example. The
+> **knee-MRI** cross-institution task (MRNet-v1.0 ↔ KneeMRI) as a runnable example. The
 > method core (`uda_core/`) is modality-agnostic; the X-ray and breast-ultrasound
 > tasks in the paper use the same code with different data configurations.
 
@@ -188,10 +188,11 @@ If you use this code, please cite the paper (under review):
 
 ```bibtex
 @article{nmfpac,
-  title   = {NMF-PAC: Responsibility-Guided Pseudo-Labeling for Unsupervised Domain
-             Adaptation in Medical Image Classification},
+  title   = {Non-negative matrix factorization prototypes for pseudo-label-based
+             unsupervised domain adaptation in cross-institution medical image
+             classification},
   author  = {Ye, Ruiping and Liu, Weiqiang and Zheng, Yifeng and Chen, Wenlong
-             and Ji, Huayi and Xu, Lei},
+             and Ji, Huayi and Lunzhu, Ciren and Xu, Lei},
   year    = {2026}
 }
 ```
