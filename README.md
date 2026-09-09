@@ -1,8 +1,11 @@
 # NMF-PAC
 
-**Non-negative Matrix Factorization-based Prototype pseudo-labeling with Adaptive
-Thresholding and Contrastive Consistency** for unsupervised domain adaptation (UDA)
-in medical image classification.
+**Non-negative matrix factorization prototypes for pseudo-label-based unsupervised
+domain adaptation in cross-institution medical image classification**
+
+Reference implementation of NMF-PAC (Non-negative Matrix Factorization-based
+Prototype pseudo-labeling with Adaptive Thresholding and Contrastive Consistency),
+an unsupervised domain adaptation (UDA) method for medical image classification.
 
 NMF-PAC builds class prototypes from labeled source features via rank-1 NMF, assigns
 target pseudo-labels from the **non-negative reconstruction responsibilities** of each
