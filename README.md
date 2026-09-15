@@ -187,7 +187,7 @@ repositories to reproduce them.
 
 ## Citation
 
-If you use this code, please cite the paper (under review):
+If you use this code, please cite the manuscript:
 
 ```bibtex
 @article{nmfpac,
