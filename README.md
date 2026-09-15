@@ -1,21 +1,21 @@
 # NMF-PAC
 
-**Non-negative matrix factorization prototypes for pseudo-label-based unsupervised
-domain adaptation in cross-institution medical image classification**
+**Reconstruction-guided prototype pseudo-labeling for unsupervised domain
+adaptation in cross-dataset medical image classification**
 
 Reference implementation of NMF-PAC (Non-negative Matrix Factorization-based
 Prototype pseudo-labeling with Adaptive Thresholding and Contrastive Consistency),
 an unsupervised domain adaptation (UDA) method for medical image classification.
 
 NMF-PAC builds class prototypes from labeled source features via rank-1 NMF, assigns
-target pseudo-labels from the **non-negative reconstruction responsibilities** of each
-target sample to the prototypes, filters them with a **class-adaptive dynamic
+target pseudo-labels from **row-normalized non-negative reconstruction coefficients**,
+filters them with a **class-adaptive dynamic
 threshold**, maintains the prototype library by EMA, and refines the class-conditional
 decision boundary with a **symmetric cross-domain InfoNCE** loss. Training alternates
 between a pseudo-label mining stage (network frozen) and a model optimization stage.
 
 > This repository contains the reference implementation of **NMF-PAC** and the
-> **knee-MRI** cross-institution task (MRNet-v1.0 ↔ KneeMRI) as a runnable example. The
+> **knee-MRI** cross-dataset task (MRNet-v1.0 ↔ KneeMRI) as a runnable example. The
 > method core (`uda_core/`) is modality-agnostic; the X-ray and breast-ultrasound
 > tasks in the paper use the same code with different data configurations.
 
@@ -191,9 +191,8 @@ If you use this code, please cite the paper (under review):
 
 ```bibtex
 @article{nmfpac,
-  title   = {Non-negative matrix factorization prototypes for pseudo-label-based
-             unsupervised domain adaptation in cross-institution medical image
-             classification},
+  title   = {Reconstruction-guided prototype pseudo-labeling for unsupervised
+             domain adaptation in cross-dataset medical image classification},
   author  = {Ye, Ruiping and Liu, Weiqiang and Zheng, Yifeng and Chen, Wenlong
              and Ji, Huayi and Lunzhu, Ciren and Xu, Lei},
   year    = {2026}
