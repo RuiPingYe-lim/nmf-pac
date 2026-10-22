@@ -1,7 +1,6 @@
 # NMF-PAC
 
-**Reconstruction-guided prototype pseudo-labeling for unsupervised domain
-adaptation in  medical image classification**
+**Reconstruction-Guided Pseudo-Labeling and Class-Adaptive Filtering for Unsupervised Domain Adaptation in Medical Image Classification**
 
 Reference implementation of NMF-PAC (Non-negative Matrix Factorization-based
 Prototype pseudo-labeling with Adaptive Thresholding and Contrastive Consistency),
